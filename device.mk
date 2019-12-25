@@ -445,7 +445,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
-    SystemUI
+    SystemUI \
+    NexusLauncherRelease
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
