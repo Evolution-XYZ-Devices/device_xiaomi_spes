@@ -379,8 +379,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Perf
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2 \
-    vendor.qti.hardware.perf@2.2.vendor
+    libqti-perfd-client
     
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
