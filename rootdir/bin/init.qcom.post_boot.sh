@@ -27,29 +27,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-function configure_read_ahead_kb_values() {
-    MemTotalStr=`cat /proc/meminfo | grep MemTotal`
-    MemTotal=${MemTotalStr:16:8}
-
-    dmpts=$(ls /sys/block/*/queue/read_ahead_kb | grep -e dm -e mmc)
-
-    # Set 128 for <= 3GB &
-    # set 512 for >= 4GB targets.
-    if [ $MemTotal -le 3145728 ]; then
-        echo 128 > /sys/block/mmcblk0/bdi/read_ahead_kb
-        echo 128 > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
-        for dm in $dmpts; do
-            echo 128 > $dm
-        done
-    else
-        echo 512 > /sys/block/mmcblk0/bdi/read_ahead_kb
-        echo 512 > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
-        for dm in $dmpts; do
-            echo 512 > $dm
-        done
-    fi
-}
-
 function enable_swap() {
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
     MemTotal=${MemTotalStr:16:8}
@@ -94,8 +71,6 @@ function configure_memory_parameters() {
 
 ProductName=`getprop ro.product.name`
 low_ram=`getprop ro.config.low_ram`
-
-      configure_read_ahead_kb_values
 
     # Set parameters for 32-bit Go targets.
     if [ "$low_ram" == "true" ]; then
@@ -173,8 +148,6 @@ low_ram=`getprop ro.config.low_ram`
     fi
 
     configure_zram_parameters
-
-    configure_read_ahead_kb_values
 
     enable_swap
 fi
