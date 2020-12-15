@@ -141,6 +141,7 @@
 
 # Shell
 /vendor/bin/init.goodix.events.sh                                       u:object_r:vendor_goodix_events_exec:s0
+/vendor/bin/init\.mi\.usb\.sh                                           u:object_r:vendor_qti_init_shell_exec:s0
 
 # Thermal
 /vendor/bin/mi_thermald                                                 u:object_r:mi_thermald_exec:s0
