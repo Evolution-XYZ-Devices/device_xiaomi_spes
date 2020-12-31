@@ -174,6 +174,8 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/spes
 TARGET_KERNEL_CLANG_VERSION := prelude
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin
 KERNEL_SUPPORTS_LLVM_TOOLS := true
+TARGET_KERNEL_ADDITIONAL_FLAGS += LD=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin/ld.lld
+TARGET_KERNEL_ADDITIONAL_FLAGS += AR=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin/llvm-ar
 
 # Media
 TARGET_DISABLED_UBWC := true
