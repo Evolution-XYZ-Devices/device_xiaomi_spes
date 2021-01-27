@@ -308,6 +308,10 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor \
     android.hardware.keymaster@4.1.vendor
 
+# KeyHandler
+PRODUCT_PACKAGES += \
+    KeyHandler
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.spes
@@ -359,6 +363,7 @@ PRODUCT_PACKAGES += \
 # Neural Networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
+
 
 # NFC
 PRODUCT_PACKAGES += \
