@@ -59,6 +59,7 @@ void vendor_load_properties() {
     search_variant(variants);
     set_dalvik_heap();
 
-    // SafetyNet workaround
+    // Etc
     property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.apex.updatable", "false");
 }
