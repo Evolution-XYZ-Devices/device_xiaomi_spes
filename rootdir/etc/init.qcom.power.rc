@@ -180,7 +180,7 @@ on property:vendor.post_boot.parsed=1
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/restricted/cpus 0-3
 
-on late-fs
+on post-fs
     # Start services for bootanim
     start servicemanager
     start surfaceflinger
@@ -188,8 +188,6 @@ on late-fs
     start vendor.configstore-hal
     start vendor.qti.hardware.display.composer
     start vendor.qti.hardware.display.allocator
-
-on post-fs
     mkdir /mnt/vendor/dsp 0770 root root
     copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
     chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
