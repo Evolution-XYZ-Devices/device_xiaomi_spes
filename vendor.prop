@@ -158,6 +158,8 @@ ro.apk_verity.mode=2
 # Graphics/Display
 debug.egl.hw=0
 debug.mdpcomp.logs=0
+ro.surface_flinger.use_smart_90_for_video=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.high_fps_early_gl_phase_offset_ns=-5000000
 debug.sf.high_fps_early_phase_offset_ns=-5000000
