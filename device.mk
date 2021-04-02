@@ -204,6 +204,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SettingsGoogle \
     SystemUIGoogle
 
+# DebugFS
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
