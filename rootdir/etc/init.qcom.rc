@@ -361,6 +361,10 @@ on property:sys.boot_completed=1
     #Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
 
+    # Restrict permissions to socket file
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix
+
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
 
