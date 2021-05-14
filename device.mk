@@ -521,3 +521,7 @@ PRODUCT_PACKAGES += \
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
