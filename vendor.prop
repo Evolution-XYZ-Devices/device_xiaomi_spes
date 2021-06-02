@@ -181,6 +181,7 @@ vendor.display.comp_mask=0
 vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_rotator_downscale=1
 vendor.display.disable_idle_time_hdr=1
 vendor.display.disable_idle_time_video=1
 vendor.display.disable_layer_stitch=1
