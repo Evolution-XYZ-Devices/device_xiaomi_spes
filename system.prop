@@ -52,6 +52,7 @@ media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
 mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
+vendor.audio.offload.buffer.size.kb=256
 
 # Netflix Properties
 ro.netflix.bsp_rev=Q6115-31409-1
