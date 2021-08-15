@@ -21,6 +21,7 @@ ro.charger.disable_init_blank=true
 
 # Display
 debug.sf.latch_unsignaled=1
+debug.performance.tuning=1
 
 # CNE
 persist.vendor.cne.feature=1
