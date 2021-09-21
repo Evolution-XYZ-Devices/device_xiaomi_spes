@@ -103,6 +103,13 @@
         <device name="SND_DEVICE_IN_UNPROCESSED_QUAD_MIC" acdb_id="146"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_HEADSET_MIC" acdb_id="147"/>
         <device name="SND_DEVICE_IN_HANDSET_GENERIC_QMIC" acdb_id="157"/>
+        <!-- lct modify begin-->
+        <device name="SND_DEVICE_OUT_ULTRASOUND" acdb_id="11007"/>
+        <device name="SND_DEVICE_OUT_ULTRASOUND_SUBSET" acdb_id="11007"/>
+        <device name="SND_DEVICE_OUT_ULTRASOUND_STEREO" acdb_id="11010"/>
+        <device name="SND_DEVICE_IN_ULTRASOUND" acdb_id="11004"/>
+        <device name="SND_DEVICE_IN_ULTRASOUND_SECONDARY" acdb_id="11004"/>
+        <!-- lct modify end-->
     </acdb_ids>
     <backend_names>
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
