@@ -122,6 +122,9 @@ ro.crypto.volume.metadata.method=dm-default-key
 # CNE
 persist.cne.feature=1
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Display calib
 debug.sdm.support_writeback=0
 ro.vendor.display.sensortype=2
