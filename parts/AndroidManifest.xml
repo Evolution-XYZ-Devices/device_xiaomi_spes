@@ -73,7 +73,8 @@
         <activity
             android:name=".thermal.ThermalActivity"
             android:label="@string/thermal_title"
-            android:theme="@style/Theme.SubSettingsBase_v31">
+            android:theme="@style/Theme.SubSettingsBase_v31"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -90,7 +91,8 @@
 
         <service
             android:name=".thermal.ThermalService"
-            android:permission="ThermalService">
+            android:permission="ThermalService"
+            android:exported="true">
         </service>
 
     </application>
