@@ -123,6 +123,7 @@ ro.crypto.volume.metadata.method=dm-default-key
 persist.cne.feature=1
 
 # Display calib
+debug.sdm.support_writeback=0
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
 vendor.display.idle_time=0
