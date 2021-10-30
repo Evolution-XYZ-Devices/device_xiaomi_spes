@@ -20,7 +20,6 @@ persist.vendor.quick.charge=1
 ro.charger.disable_init_blank=true
 
 # Display
-debug.sf.latch_unsignaled=1
 debug.performance.tuning=1
 
 # CNE
@@ -92,3 +91,5 @@ renderthread.skia.reduceopstasksplitting=true
 
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
+
+debug.sf.latch_unsignaled=0
