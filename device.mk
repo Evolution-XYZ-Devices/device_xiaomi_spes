@@ -443,6 +443,10 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qti.dcvs.sh
 
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    SystemUI
+
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom_ramdisk \
