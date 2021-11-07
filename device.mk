@@ -278,10 +278,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.spes
 
-# FM
-PRODUCT_PACKAGES += \
-    FM2 \
-    qcom.fmradio
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
