@@ -599,4 +599,7 @@
         <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
         <item>7</item> <!-- COLOR_MODE_SRGB -->
       </integer-array>
+
+          <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">false</bool>
 </resources>
