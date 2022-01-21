@@ -47,6 +47,7 @@ persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 
 # LMKD
 ro.config.low_ram=false
+ro.lmk.log_stats=false
 
 # Media
 media.aac_51_output_enabled=true
