@@ -51,6 +51,9 @@ on init
     start vendor.qseecomd
     start keymaster-4-0
 
+    # Disable UFS powersaving
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 0
+
 on early-fs
     start vold
 
