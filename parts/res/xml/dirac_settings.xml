@@ -50,7 +50,6 @@
         android:summary="%s"
         android:icon="@drawable/ic_scenes" />
 
-
     <SwitchPreference
         android:key="dirac_hifi_pref"
         android:defaultValue="false"
