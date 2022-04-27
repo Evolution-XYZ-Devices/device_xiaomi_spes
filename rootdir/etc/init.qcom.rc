@@ -432,6 +432,62 @@ service vendor.qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
 
 on property:sys.boot_completed=1
     start vendor.qcom-post-boot
+# Tweaks
+    write /proc/sys/kernel/sched_autogroup_enabled 1
+    write /proc/sys/kernel/sched_child_runs_first 1
+    write /proc/sys/kernel/sched_tunable_scaling 0
+    write /proc/sys/kernel/sched_min_task_util_for_colocation 0
+    write /proc/sys/vm/stat_interval 10
+    write /proc/sys/net/ipv4/tcp_ecn 1
+    write /proc/sys/net/ipv4/tcp_fastopen 3
+    write /proc/sys/net/ipv4/tcp_syncookies 0
+    write /sys/devices/system/cpu/cpu_boost/sched_boost_on_input 1
+    # Setup default schedTune value for foreground/top-app
+    write /dev/stune/foreground/schedtune.prefer_idle 1
+    write /dev/stune/top-app/schedtune.boost 1
+    write /dev/stune/top-app/schedtune.prefer_idle 1
+    # Tune down debugging
+    write /proc/sys/kernel/sched_schedstats 0
+    write /proc/sys/kernel/printk_devkmsg off
+    stop vendor.ipacm-diag
+    stop vendor.cnss_diag
+    wait 60
+    write /sys/block/sda/queue/add_random 0
+    write /sys/block/sda/queue/iostats 0
+    write /sys/block/sda/queue/read_ahead_kb 128
+    write /sys/block/sda/queue/nr_requests 64
+    write /sys/block/sdb/queue/add_random 0
+    write /sys/block/sdb/queue/iostats 0
+    write /sys/block/sdb/queue/read_ahead_kb 128
+    write /sys/block/sdb/queue/nr_requests 64
+    write /sys/block/sdc/queue/add_random 0
+    write /sys/block/sdc/queue/iostats 0
+    write /sys/block/sdc/queue/read_ahead_kb 128
+    write /sys/block/sdc/queue/nr_requests 64
+    write /sys/block/sdd/queue/add_random 0
+    write /sys/block/sdd/queue/iostats 0
+    write /sys/block/sdd/queue/read_ahead_kb 128
+    write /sys/block/sdd/queue/nr_requests 64
+    write /sys/block/sde/queue/add_random 0
+    write /sys/block/sde/queue/iostats 0
+    write /sys/block/sde/queue/read_ahead_kb 128
+    write /sys/block/sde/queue/nr_requests 64
+    write /sys/block/dm-0/queue/add_random 0
+    write /sys/block/dm-0/queue/iostats 0
+    write /sys/block/dm-0/queue/read_ahead_kb 128
+    write /sys/block/dm-0/queue/nr_requests 64
+    write /sys/block/dm-1/queue/add_random 0
+    write /sys/block/dm-1/queue/iostats 0
+    write /sys/block/dm-1/queue/read_ahead_kb 128
+    write /sys/block/dm-1/queue/nr_requests 64
+    write /sys/block/dm-2/queue/add_random 0
+    write /sys/block/dm-2/queue/iostats 0
+    write /sys/block/dm-2/queue/read_ahead_kb 128
+    write /sys/block/dm-2/queue/nr_requests 64
+    write /sys/block/dm-3/queue/add_random 0
+    write /sys/block/dm-3/queue/iostats 0
+    write /sys/block/dm-3/queue/read_ahead_kb 128
+    write /sys/block/dm-3/queue/nr_requests 64
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
