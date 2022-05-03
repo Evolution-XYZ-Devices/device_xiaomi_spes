@@ -83,3 +83,8 @@ persist.sys.binary_xml=false
 
 # NFC DT
 ro.nfc.port=I2C
+
+# SkiaGL Threaded
+debug.renderengine.backend=skiaglthreaded
+debug.hwui.renderer=skiagl
+renderthread.skia.reduceopstasksplitting=true
