@@ -6,3 +6,8 @@ allow platform_app sysfs_msm_subsys:dir search;
 # Allow systemui to read vendor_sysfs_graphics
 allow platform_app vendor_sysfs_graphics:dir search;
 allow platform_app vendor_sysfs_graphics:file r_file_perms;
+
+allow platform_app {
+    hal_camerapostproc_xiaomi_hwservice
+    hal_misys_hwservice
+}:hwservice_manager find;
