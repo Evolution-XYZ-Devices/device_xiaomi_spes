@@ -434,7 +434,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mdm.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sh
+    init.qcom.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.qti.dcvs.sh
@@ -442,6 +442,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom_ramdisk \
+    init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
