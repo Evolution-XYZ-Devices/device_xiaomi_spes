@@ -205,9 +205,8 @@ ro.nfc.port=I2C
 # NTP
 persist.backup.ntpServer=0.pool.ntp.org
 
-# PERF
+# Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf-hal.ver=2.2
 
 # Radio
 DEVICE_PROVISIONED=1
