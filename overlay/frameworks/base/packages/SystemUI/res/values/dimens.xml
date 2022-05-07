@@ -16,15 +16,11 @@
 */
 -->
 <resources>
-    <!-- The padding on the side of the navigation bar. Must be greater than or equal to
-         navigation_extra_key_width -->
-    <dimen name="navigation_side_padding">85.0dip</dimen>
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">5.0dip</dimen>
-    <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">5.0dip</dimen>
-    <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">5.0dip</dimen>
-    <!-- rounded corner content padding -->
+    <dimen name="status_bar_padding_top">1.5dip</dimen>
+    
     <dimen name="rounded_corner_content_padding">10dp</dimen>
+
+    <!-- Height of the status bar header bar when on Keyguard (match status_bar_height) -->
+    <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
 </resources>
