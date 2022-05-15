@@ -1514,29 +1514,28 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
-# Thermal engine - from alioth_global-user 12 RKQ1.200826.002 V13.0.2.0.SKHMIXM release-keys
--vendor/lib/libthermalclient.so|6ed686c6c39546a7bf532767f6d87808a42b1176
--vendor/lib64/libthermalclient.so|7bcb4af9a6ae8d12bb0b2749c85e2ff1473678aa
-vendor/bin/mi_thermald|909c57ed861248423a62fc2d0385e99d955e9b0f
-vendor/etc/init/init.mi_thermald.rc|6505d89e19957888612d89f6769585a7d26af080
-
-# Thermal config - V13.0.5.0
-vendor/etc/thermal-4k.conf
-vendor/etc/thermal-arvr.conf
-vendor/etc/thermal-camera.conf
-vendor/etc/thermal-chg-only.conf
+# Thermal engine
 vendor/etc/thermal-class0.conf
-vendor/etc/thermal-engine.conf
-vendor/etc/thermal-map.conf
 vendor/etc/thermal-navigation.conf
-vendor/etc/thermal-nolimits.conf
-vendor/etc/thermal-normal.conf
-vendor/etc/thermal-phone.conf
-vendor/etc/thermal-tgame.conf
-vendor/etc/thermal-videochat.conf
 vendor/etc/thermal-video.conf
+vendor/etc/thermal-videochat.conf
 vendor/etc/thermal-youtube.conf
-vendor/etc/thermald-devices.conf
+
+# Thermal engine - from surya V12.5.8.0.RJGMIXM
+-vendor/lib64/libthermalclient.so|41274c82e1a472d12b2ebcb4156f7f77b109efa8 
+vendor/bin/mi_thermald|2cb2d46219c6bc7005b61a6960b9f674049a586c
+vendor/etc/thermal-4k.conf|1648b94b29fcbacd65a5695eccae404274d9e1e0
+vendor/etc/thermal-arvr.conf|33cbfff90543ceaedf7c4f0d45caf11e9ef9a52f
+vendor/etc/thermal-camera.conf|6882a03c248eb3462bcc2f40754ada2e3d069f08
+vendor/etc/thermal-chg-only.conf|d7affb7547a6f07267b8dddd9d7e549f9fdeb498
+vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
+vendor/etc/thermal-map.conf|6072eb7de179825c85d5423c49069e3999810e3f
+vendor/etc/thermal-nolimits.conf|be2040b00b09f1b719c7deef7590af9f634ad694
+vendor/etc/thermal-normal.conf|e8b6686ff365e4f6860cb23c37a7fd6cefe3b946
+vendor/etc/thermal-phone.conf|e736e2bf8425977dd611098efcf14fa13a3ad3b5
+vendor/etc/thermal-tgame.conf|d30fdf9ae2cce80a05a3ccd86d8798466d4cdb80
+vendor/etc/thermald-devices.conf|eaa11ec5435404df861a76e5c857e93028ed7ef4
+vendor/lib64/libthermalfeature.so|039c92ea5b7532568c63035a51426d9801eaa097
 
 # Thermal configs (India) - from alioth_global-user 12 RKQ1.200826.002 V13.0.2.0.SKHMIXM release-keys
 vendor/etc/thermal-india-class0.conf|7cc57c1e625297c600c840a08e6e7d2d0af81817
