@@ -444,6 +444,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom_ramdisk \
+    fstab.zram \
     init.qcom.power.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
