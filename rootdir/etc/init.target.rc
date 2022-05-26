@@ -123,7 +123,6 @@ on boot
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop vendor.usb.controller 4e00000.dwc3
-    start mi_thermald
     start vendor.sensors
 
     # Load WLAN driver
@@ -150,7 +149,6 @@ on charger
     start vendor.power_off_alarm
     setprop vendor.usb.controller 4e00000.dwc3
     setprop sys.usb.configfs 1
-    start mi_thermald
     start vendor.hvdcp_opti
     start vendor.qcom-post-boot
 
@@ -166,12 +164,6 @@ service vendor.per_mgr /vendor/bin/pm-service
     group system
     ioprio rt 4
     writepid /dev/cpuset/system-background/tasks
-
-service mi_thermald /system/vendor/bin/mi_thermald
-    class main
-    user root
-    group system
-    seclabel u:r:mi_thermald:s0
 
 service vendor.per_proxy /vendor/bin/pm-proxy
     class core
