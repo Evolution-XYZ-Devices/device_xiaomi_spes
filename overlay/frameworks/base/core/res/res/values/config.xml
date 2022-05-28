@@ -573,6 +573,14 @@
     <bool name="config_sf_slowBlur">false</bool>
     
 
+    <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
+    <integer-array name="config_availableColorModes">
+        <item>0</item> <!-- COLOR_MODE_NATURAL   -->
+        <item>1</item> <!-- COLOR_MODE_BOOSTED   -->
+        <item>2</item> <!-- COLOR_MODE_SATURATED -->
+        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
+    </integer-array>
+
     <!-- The following two arrays specify which color space to use for display composition when a
          certain color mode is active.
          Composition color spaces are defined in android.view.Display.COLOR_MODE_xxx, and color
@@ -585,6 +593,8 @@
          If a color mode does not have a corresponding color space specified in this array, the
          currently set composition color space will not be modified.-->
     <integer-array name="config_displayCompositionColorModes">
+        <item>0</item> <!-- COLOR_MODE_NATURAL   -->
+        <item>1</item> <!-- COLOR_MODE_BOOSTED   -->
         <item>2</item> <!-- COLOR_MODE_SATURATED -->
         <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
     </integer-array>
