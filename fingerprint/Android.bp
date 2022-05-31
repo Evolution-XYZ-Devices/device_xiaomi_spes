@@ -17,9 +17,6 @@ cc_binary {
         "libhardware",
         "libutils",
         "android.hardware.biometrics.fingerprint@2.1",
-        "android.hardware.power-V1-ndk_platform",
-        "pixel-power-ext-V1-ndk_platform",
-        "libbinder_ndk",
     ],
 
 }

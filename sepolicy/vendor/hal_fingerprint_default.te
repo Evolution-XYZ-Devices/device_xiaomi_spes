@@ -32,9 +32,6 @@ get_prop(system_server, vendor_fp_prop);
 
 set_prop(hal_fingerprint_default, vendor_fp_prop)
 
-# Allow fp HAL to sent hint
-hal_client_domain(hal_fingerprint_default, hal_power)
-
 allow hal_fingerprint_default vendor_sysfs_spss:dir { search };
 allow hal_fingerprint_default vendor_sysfs_spss:file { open read };
 allow hal_fingerprint_default sysfs:file { write };
