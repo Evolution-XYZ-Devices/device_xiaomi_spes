@@ -256,3 +256,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 include vendor/xiaomi/spes/BoardConfigVendor.mk
+
+
+# Firmware
+include vendor/xiaomi/spes-firmware/BoardConfigVendor.mk
