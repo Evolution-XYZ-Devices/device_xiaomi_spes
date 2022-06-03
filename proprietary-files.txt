@@ -315,7 +315,6 @@ vendor/lib64/libipebpsstriping.so
 vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmiai_supernight.so
-vendor/lib64/libmialgoengine.so
 vendor/lib64/libmibokeh_712.so
 vendor/lib64/libmorpho_Lowlight.so
 vendor/lib64/libmpbase.so
