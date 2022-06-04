@@ -171,6 +171,9 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := vendor/spes-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/spes
+TARGET_KERNEL_CLANG_VERSION := prelude
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-prelude/bin
+KERNEL_SUPPORTS_LLVM_TOOLS := true
 
 # Media
 TARGET_DISABLED_UBWC := true
