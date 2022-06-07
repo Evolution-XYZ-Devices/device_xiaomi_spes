@@ -141,9 +141,6 @@ ro.hardware.fp.sideCap=true
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Graphics
-debug.hwui.renderer=skiagl
-debug.cpurend.vsync=false
-renderthread.skia.reduceopstasksplitting=true
 debug.egl.hw=0
 debug.mdpcomp.logs=0
 debug.sf.enable_advanced_sf_phase_offset=1
