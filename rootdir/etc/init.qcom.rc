@@ -449,11 +449,6 @@ service hostapd_fst /vendor/bin/hw/hostapd -dd -g /data/vendor/wifi/hostapd/glob
     disabled
     oneshot
 
-service battery_monitor /system/bin/battery_monitor
-    user system
-    group system
-    disabled
-
 service charger /system/bin/chargeonlymode
     class charger
     user system
