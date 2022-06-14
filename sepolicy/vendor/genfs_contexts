@@ -1,9 +1,6 @@
 # Block
 genfscon sysfs /devices/platform/soc/4804000.ufshc/host0/target0:0:0/0:0:0:0/block/                 u:object_r:sysfs_devices_block:s0
 
-# Charger
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0066/Charging_Adapter/pd_adapter           u:object_r:vendor_sysfs_usbpd_device:s0
-
 # DSP
 genfscon sysfs /kernel/boot_cdsp/boot                                                               u:object_r:sysfs_msm_boot:s0
 
@@ -38,38 +35,8 @@ genfscon sysfs /devices/platform/soc/soc:fpc1020/request_vreg                   
 genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup_enable                                      u:object_r:vendor_sysfs_fingerprint:s0
 
 # Health
-genfscon sysfs /class/power_supply/battery/capacity                                                 u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /class/power_supply/bms/charge_counter                                               u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /class/power_supply/bms/charge_full                                                  u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /class/power_supply/bms/cycle_count                                                  u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0066/max77729-fuelgauge/power_supply/bms   u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0066/max77729-fuelgauge/power_supply/bms/charge_counter  u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0066/max77729-fuelgauge/power_supply/bms/charge_full     u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0066/max77729-fuelgauge/power_supply/bms/cycle_count     u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0066/max77729-fuelgauge/power_supply/bms/wakeup29        u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0066/max77729-fuelgauge/power_supply/bms/wakeup29/active_count  u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0066/max77729-fuelgauge/power_supply/bms/wakeup29/event_count   u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0066/max77729-fuelgauge/power_supply/bms/wakeup29/wakeup_count  u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0071/power_supply/bms                      u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0071/power_supply/bms/charge_counter       u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0071/power_supply/bms/charge_full          u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0071/power_supply/bms/cycle_count          u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0071/power_supply/bms/wakeup39             u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0071/power_supply/bms/wakeup39/active_count  u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0071/power_supply/bms/wakeup39/event_count   u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/4a84000.i2c/i2c-0/0-0071/power_supply/bms/wakeup39/wakeup_count  u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery                        u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery/charge_counter         u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery/charge_full            u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery/cycle_count            u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery/wakeup38               u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery/wakeup38/active_count  u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery/wakeup38/event_count   u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/battery/wakeup38/wakeup_count  u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify                     u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/wakeup1             u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/wakeup1/event_count u:object_r:vendor_sysfs_battery_supply:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/usb/real_type                  u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /class/power_supply/battery/capacity                                                                                                u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify                                                                    u:object_r:vendor_sysfs_battery_supply:s0
 
 # kmsg
 genfscon proc /last_kmsg                                                                            u:object_r:proc_last_kmsg:s0
@@ -78,9 +45,6 @@ genfscon proc /last_kmsg                                                        
 genfscon sysfs /devices/platform/soc/4804000.ufshc/host0/target0:0:0/0:0:0:0/                       u:object_r:vendor_sysfs_memory:s0
 genfscon sysfs /devices/virtual/mi_memory/mi_memory_device/ddr/ddr_vendor                           u:object_r:vendor_sysfs_memory:s0
 genfscon sysfs /devices/virtual/mi_memory/mi_memory_device/ufshcd0/                                 u:object_r:vendor_sysfs_memory:s0
-
-# Power Supply
-genfscon sysfs /devices/platform/soc/soc:qcom,nopmi-chg/power_supply/usb                            u:object_r:vendor_sysfs_usb_supply:s0
 
 # UFS
 genfscon sysfs /devices/platform/soc/4804000.ufshc/clkgate_enable                                   u:object_r:vendor_sysfs_scsi_host:s0
