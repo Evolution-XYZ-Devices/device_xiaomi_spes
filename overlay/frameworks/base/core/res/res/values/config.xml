@@ -569,8 +569,6 @@
          As of Honeycomb, blurring is not supported anymore. -->
     <bool name="config_sf_slowBlur">false</bool>
     
-     <!-- The max scale for the wallpaper when it's zoomed in -->
-    <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
 
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
