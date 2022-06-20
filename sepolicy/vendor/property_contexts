@@ -11,6 +11,7 @@ camerai.                                u:object_r:vendor_camera_prop:s0
 ro.camera.                              u:object_r:vendor_camera_prop:s0
 persist.camera.                         u:object_r:vendor_camera_prop:s0
 camera_screen_light_delay               u:object_r:vendor_camera_prop:s0
+vendor.vidhance.                        u:object_r:vendor_camera_prop:s0
 
 # DFPS
 persist.vendor.dfps.level                       u:object_r:vendor_display_prop:s0
