@@ -106,6 +106,11 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
 
+# Audio Dirac - from xiaomi
+lib/libDiracAPI_SHARED.so:vendor/lib/libDiracAPI_SHARED.so
+lib/soundfx/libdirac.so:vendor/lib/soundfx/libdirac.so
+vendor/etc/diracmobile.config
+
 # Audio HAL
 vendor/lib/hw/audio.primary.bengal.so
 vendor/lib/libaudio_log_utils.so
