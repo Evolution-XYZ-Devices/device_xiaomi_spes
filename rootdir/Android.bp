@@ -4,19 +4,6 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-sh_binary {
-    name: "init.qcom.usb.sh",
-    src: "bin/init.qcom.usb.sh",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.qcom.usb.rc",
-    src: "etc/init.qcom.usb.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
 prebuilt_etc {
     name: "init.qcom.power.rc",
     src: "etc/init.qcom.power.rc",
