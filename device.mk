@@ -395,6 +395,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
     $(LOCAL_PATH)/configs/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml 
 
+# Pixel Wallpapers (2021)
+PRODUCT_PACKAGES += \
+    PixelWallpapers2021
+
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
