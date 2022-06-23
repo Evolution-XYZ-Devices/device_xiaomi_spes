@@ -525,8 +525,7 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M 514 57 a 25 25 0 1 0 52 0 a 25 25 0 1 0 -52 0 Z
-        @left
+        M -31.85 57.275 a 31.85 31.85 90 1 0 63.7 0 a 31.85 31.85 90 1 0 -63.7 0 Z
     </string>
 
     <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
