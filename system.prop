@@ -49,6 +49,10 @@ persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 ro.config.low_ram=false
 ro.lmk.log_stats=false
 
+# LMK tuning
+ro.lmk.filecache_min_kb=153600
+ro.lmk.stall_limit_critical=40
+
 # Media
 media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
