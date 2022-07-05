@@ -258,6 +258,9 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
+# GCam Go
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt-V3
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-qti
