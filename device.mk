@@ -555,3 +555,7 @@ PRODUCT_PACKAGES += \
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
+
+# Recorder
+PRODUCT_PACKAGES += \
+    RecorderPrebuilt
