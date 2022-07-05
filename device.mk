@@ -559,3 +559,7 @@ PRODUCT_PACKAGES += \
 # Recorder
 PRODUCT_PACKAGES += \
     RecorderPrebuilt
+
+# SystemUIGoogleOverlay
+PRODUCT_PACKAGES += \
+    SystemUIGoogleOverlaySpes

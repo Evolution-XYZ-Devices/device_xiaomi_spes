@@ -41,4 +41,14 @@
     <string name="config_rounded_mask" translatable="false">M156,0 C76,4 58,5 31,31 5,58 4,76 0,156</string>
 
     <bool name="config_roundedCornerMultipleRadius">true</bool>
+
+    <!-- The default tiles to display in QuickSettings -->
+    <string name="quick_settings_tiles_default" translatable="false">
+        internet,bt,flashlight,dnd,alarm,airplane,nfc,controls,wallet,rotation,battery,cast,screenrecord,mictoggle,cameratoggle
+    </string>
+
+    <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
+    <string name="quick_settings_tiles_stock" translatable="false">
+        internet,bt,flashlight,dnd,alarm,airplane,nfc,controls,wallet,rotation,battery,cast,screenrecord,wifi,cell,mictoggle,cameratoggle,location,hotspot,inversion,saver,dark,work,night,reverse,reduce_brightness,powershare,caffeine,ambient_display,usb_tether,sync,sound,screenshot,heads_up,reboot,onthego,volume_panel,aod,dataswitch,fpsinfo,compass,cpuinfo,soundsearch,mono,vpn,livedisplay,reading_mode,anti_flicker,refresh_rate,smartpixels,music,locale
+    </string>
 </resources>

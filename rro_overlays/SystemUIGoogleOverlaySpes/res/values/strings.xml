@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="quick_settings_tiles_default" translatable="false">
+        internet,bt,flashlight,dnd,alarm,airplane,nfc,controls,wallet,rotation,battery,cast,screenrecord,location,hotspot
+    </string>
+</resources>
