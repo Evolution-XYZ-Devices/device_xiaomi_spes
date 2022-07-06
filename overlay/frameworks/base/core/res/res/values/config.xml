@@ -643,4 +643,7 @@
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
     <bool name="config_carrier_wfc_ims_available">true</bool>
+
+    <!-- Enable video pause workaround when enabling/disabling the camera. -->
+    <bool name="config_useVideoPauseWorkaround">true</bool>
 </resources>
