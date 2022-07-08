@@ -147,8 +147,6 @@ low_ram=`getprop ro.config.low_ram`
         echo 0 > /proc/sys/vm/watermark_boost_factor
     fi
 
-    configure_zram_parameters
-
     enable_swap
 fi
 }
