@@ -554,7 +554,8 @@ PRODUCT_PACKAGES += \
 
 # Recorder
 PRODUCT_PACKAGES += \
-    RecorderPrebuilt
+    RecorderPrebuilt \
+    PrebuiltGmail
 
 # SystemUIGoogleOverlay
 PRODUCT_PACKAGES += \
