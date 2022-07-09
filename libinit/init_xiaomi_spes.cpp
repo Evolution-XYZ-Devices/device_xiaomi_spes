@@ -16,7 +16,7 @@ static const variant_info_t spes_info = {
     .brand = "Redmi",
     .device = "spes",
     .model = "2201117TG",
-    .build_fingerprint = "Redmi/spes_global/spes:11/RKQ1.211001.001/V13.0.9.0.RGCMIXM:user/release-keys",
+    .build_fingerprint = "Redmi/spes_global/spes:11/RKQ1.211001.001/V13.0.15.0.RGCMIXM:user/release-keys",
 
     .nfc = false,
 };
@@ -28,7 +28,7 @@ static const variant_info_t spes_in_info = {
     .brand = "Redmi",
     .device = "spes",
     .model = "2201117TI",
-    .build_fingerprint = "Redmi/spes_in/spes:11/RKQ1.211001.001/V13.0.8.0.RGCINXM:user/release-keys",
+    .build_fingerprint = "Redmi/spes_in/spes:11/RKQ1.211001.001/V13.0.10.0.RGCINXM:user/release-keys",
 
     .nfc = false,
 };
@@ -40,7 +40,7 @@ static const variant_info_t spesn_info = {
     .brand = "Redmi",
     .device = "spesn",
     .model = "2201117TY",
-    .build_fingerprint = "Redmi/spesn_global/spesn:11/RKQ1.211001.001/V13.0.9.0.RGCMIXM:user/release-keys",
+    .build_fingerprint = "Redmi/spesn_global/spesn:11/RKQ1.211001.001/V13.0.11.0.RGCMIXM:user/release-keys",
 
     .nfc = true,
 };
