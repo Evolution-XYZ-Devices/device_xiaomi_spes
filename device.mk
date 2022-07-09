@@ -559,3 +559,7 @@ PRODUCT_PACKAGES += \
 # SystemUIGoogleOverlay
 PRODUCT_PACKAGES += \
     SystemUIGoogleOverlaySpes
+
+# PixelLauncherCustomOverlay
+PRODUCT_PACKAGES += \
+    PixelLauncherCustomOverlaySpes
