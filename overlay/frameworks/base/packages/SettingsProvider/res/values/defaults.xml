@@ -26,7 +26,4 @@
 
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
     <string name="def_device_name_simple">Redmi Note 11</string>
-
-    <fraction name="def_window_animation_scale">111%</fraction>
-    <fraction name="def_window_transition_scale">111%</fraction>
 </resources>
