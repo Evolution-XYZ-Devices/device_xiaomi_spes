@@ -16,6 +16,7 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_MINI_GAPPS := true
+TARGET_ENABLE_BLUR := false
 
 # Product Specifics
 PRODUCT_NAME := evolution_spes
