@@ -64,8 +64,6 @@ public final class ThermalUtils {
     public static void initialize(Context context) {
         if (isServiceEnabled(context))
             startService(context);
-        else
-            setDefaultThermalProfile();
     }
 
     protected static void startService(Context context) {
@@ -150,10 +148,6 @@ public final class ThermalUtils {
         }
 
         return state;
-    }
-
-    protected static void setDefaultThermalProfile() {
-        FileUtils.writeLine(THERMAL_SCONFIG, THERMAL_STATE_DEFAULT);
     }
 
     protected void setThermalProfile(String packageName) {

@@ -23,11 +23,9 @@ import android.app.IActivityTaskManager;
 import android.app.Service;
 import android.app.TaskStackListener;
 import android.app.TaskStackListener;
-import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.IBinder;
 import android.os.RemoteException;
 import android.provider.Settings;
@@ -86,14 +84,6 @@ public class ThermalService extends Service {
         }
     };
 
-    private BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            mPreviousApp = "";
-            mThermalUtils.setDefaultThermalProfile();
-        }
-    };
-
     @Override
     public void onCreate() {
         if (DEBUG) Log.d(TAG, "Creating service");
@@ -104,22 +94,7 @@ public class ThermalService extends Service {
         } catch (RemoteException e) {
             // Do nothing
         }
-        registerReceiver();
         super.onCreate();
-    }
-
-    @Override
-    public void onDestroy() {
-        if (DEBUG) Log.d(TAG, "Destroying service");
-        unregisterReceiver();
-        try {
-            ActivityTaskManager.getService().unregisterTaskStackListener(mTaskListener);
-        } catch (RemoteException e) {
-            // Do nothing
-        }
-        mThermalUtils.setDefaultThermalProfile();
-        mThermalUtils = null;
-        super.onDestroy();
     }
 
     @Override
@@ -131,16 +106,5 @@ public class ThermalService extends Service {
     @Override
     public IBinder onBind(Intent intent) {
         return null;
-    }
-
-    private void registerReceiver() {
-        IntentFilter filter = new IntentFilter();
-        filter.addAction(Intent.ACTION_SCREEN_OFF);
-        filter.addAction(Intent.ACTION_SCREEN_ON);
-        this.registerReceiver(mIntentReceiver, filter);
-    }
-
-    private void unregisterReceiver() {
-        this.unregisterReceiver(mIntentReceiver);
     }
 }
