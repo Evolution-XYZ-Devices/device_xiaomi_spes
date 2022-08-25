@@ -1,0 +1,14 @@
+[
+ {
+    "repository" : "etylix/kernel_xiaomi_spes-header",
+    "target_path": "kernel/xiaomi/spes",
+    "branch"     : "12",
+    "remote"     : "github"
+ },
+ {
+   "repository" : "etylix/packages_apps_GCamGOPrebuilt",
+   "target_path": "packages/apps/GCamGOPrebuilt",
+   "branch"     : "snow",
+   "remote"     : "github"
+ }
+]
