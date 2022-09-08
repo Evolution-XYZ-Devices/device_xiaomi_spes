@@ -41,9 +41,4 @@
     <string name="config_rounded_mask" translatable="false">M156,0 C76,4 58,5 31,31 5,58 4,76 0,156</string>
 
     <bool name="config_roundedCornerMultipleRadius">true</bool>
-
-    <!-- The default tiles to display in QuickSettings -->
-    <string name="quick_settings_tiles_default" translatable="false">
-        internet,bt,flashlight,dnd,alarm,airplane,nfc,controls,wallet,rotation,battery,cast,screenrecord,mictoggle,cameratoggle,custom(com.android.permissioncontroller/.permission.service.SafetyCenterQsTileService)
-    </string>
 </resources>
