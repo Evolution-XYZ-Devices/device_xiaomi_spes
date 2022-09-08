@@ -565,10 +565,6 @@ PRODUCT_PACKAGES += \
     RecorderPrebuilt \
     PrebuiltGmail
 
-# SystemUIGoogleOverlay
-PRODUCT_PACKAGES += \
-    SystemUIGoogleOverlaySpes
-
 # PixelLauncherCustomOverlay
 PRODUCT_PACKAGES += \
     PixelLauncherCustomOverlaySpes
