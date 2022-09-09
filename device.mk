@@ -221,9 +221,11 @@ PRODUCT_PACKAGES += \
     gralloc.bengal
 
 PRODUCT_PACKAGES += \
+    libdisplayconfig.system.qti \
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
     libqdMetaData \
+    libqdMetaData.system \
     libsdmcore \
     libsdmutils \
     libtinyxml
