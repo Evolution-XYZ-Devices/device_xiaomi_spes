@@ -41,4 +41,7 @@
     <string name="config_rounded_mask" translatable="false">M156,0 C76,4 58,5 31,31 5,58 4,76 0,156</string>
 
     <bool name="config_roundedCornerMultipleRadius">true</bool>
+
+    <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
+    <integer name="config_keyguardMaxRefreshRate">60</integer>
 </resources>
