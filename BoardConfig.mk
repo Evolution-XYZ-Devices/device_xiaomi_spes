@@ -217,8 +217,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_BOARD_PLATFORM := bengal
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop

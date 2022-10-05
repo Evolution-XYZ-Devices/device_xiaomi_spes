@@ -20,10 +20,9 @@ on boot
     chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
     chmod 0660 /dev/cpuset/camera-daemon/tasks
 
-on init
-    # DT2W
-    chown system system /proc/tp_gesture
-    chmod 0664 /proc/tp_gesture
+    # Set kernel touchpanel permissions
+    chmod 0660 /sys/touchpanel/double_tap
+    chown system system /sys/touchpanel/double_tap
 
 on late-fs
     # Start services for bootanim
