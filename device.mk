@@ -109,7 +109,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.r_submix.default \
-    audio.primary.bengal \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
@@ -226,8 +225,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     memtrack.bengal \
-    gralloc.bengal \
-    hwcomposer.bengal
+    gralloc.bengal
 
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
@@ -329,7 +327,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service
 
 PRODUCT_PACKAGES += \
@@ -349,8 +346,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libstagefrighthw \
-    libstagefrighthw_omx \
-    libstagefrighthw_foundation \
     libstagefright_omx.vendor
 
 PRODUCT_COPY_FILES += \
@@ -398,7 +393,6 @@ PRODUCT_PACKAGES += \
     
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2 \
     android.hardware.power@1.2.vendor \
     android.hardware.power-service.xiaomi-libperfmgr
 
