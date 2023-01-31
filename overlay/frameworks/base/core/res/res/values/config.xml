@@ -626,4 +626,6 @@
          Settings.System.RING_VIBRATION_INTENSITY more details on the constant values and
          meanings. -->
     <integer name="config_defaultRingVibrationIntensity">3</integer>
+    <!-- Whether device supports in-display fingerprint -->
+    <bool name="config_supportsUdfps">false</bool>
 </resources>
