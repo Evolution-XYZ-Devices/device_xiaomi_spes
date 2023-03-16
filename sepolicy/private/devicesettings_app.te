@@ -31,3 +31,10 @@ allow devicesettings_app {
   sysfs_leds
   sysfs_thermal
 }:{ file lnk_file } rw_file_perms;
+
+# dont allow devicesettings_app to access some rendering and resampling props
+# persist.input.velocitytracker.strategy
+# renderthread.skia.reduceopstasksplitting
+# ro.input.resampling
+# viewroot.profile_rendering
+dontaudit devicesettings_app default_prop:file read;
