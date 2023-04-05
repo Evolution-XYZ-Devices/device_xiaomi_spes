@@ -159,6 +159,9 @@ ro.hardware.fp.sideCap=true
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# FS-verity
+ro.apk_verity.mode=2
+
 # Graphics/Display
 debug.egl.hw=0
 debug.mdpcomp.logs=0
