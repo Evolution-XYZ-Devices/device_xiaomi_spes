@@ -86,6 +86,9 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # Configs File System
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
+# Camera
+MALLOC_SVELTE := true
+
 # Display
 TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DISPLAY_RENDER_INTENTS := true
