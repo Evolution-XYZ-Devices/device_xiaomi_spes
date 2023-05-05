@@ -562,7 +562,6 @@
          As of Honeycomb, blurring is not supported anymore. -->
     <bool name="config_sf_slowBlur">false</bool>
     
-
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
         <item>0</item> <!-- COLOR_MODE_NATURAL   -->
@@ -570,6 +569,11 @@
         <item>2</item> <!-- COLOR_MODE_SATURATED -->
         <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
     </integer-array>
+
+    <!-- Color mode to use when accessibility transforms are enabled. This color mode must be
+         supported by the device, but not necessarily appear in config_availableColorModes. The
+         regularly selected color mode will be used if this value is negative. -->
+    <integer name="config_accessibilityColorMode">2</integer>
 
     <!-- The following two arrays specify which color space to use for display composition when a
          certain color mode is active.
@@ -590,8 +594,10 @@
     </integer-array>
     <integer-array name="config_displayCompositionColorSpaces">
         <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
-        <item>7</item> <!-- COLOR_MODE_SRGB -->
-      </integer-array>
+        <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
+        <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
+        <item>0</item> <!-- COLOR_MODE_DEFAULT -->
+ </integer-array>
 
      <!-- The default value for transition animation scale found in developer settings.
          1.0 corresponds to 1x animator scale, 0 means that there will be no transition
