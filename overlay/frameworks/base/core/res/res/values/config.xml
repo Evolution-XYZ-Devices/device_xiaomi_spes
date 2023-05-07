@@ -91,24 +91,6 @@
          This array should be equal in size to config_screenBrightnessBacklight. -->
     <integer-array name="config_screenBrightnessBacklight">
         <item>2</item>
-        <item>3</item>
-        <item>10</item>
-        <item>15</item>
-        <item>30</item>
-        <item>45</item>
-        <item>60</item>
-        <item>75</item>
-        <item>90</item>
-        <item>105</item>
-        <item>120</item>
-        <item>135</item>
-        <item>150</item>
-        <item>165</item>
-        <item>180</item>
-        <item>195</item>
-        <item>210</item>
-        <item>225</item>
-        <item>240</item>
         <item>255</item>
     </integer-array>
 
@@ -121,25 +103,8 @@
          This array should be equal in size to config_screenBrightnessBacklight -->
     <integer-array name="config_screenBrightnessNits">
         <item>2</item>
-        <item>4</item>
-        <item>22</item>
-        <item>30</item>
-        <item>68</item>
-        <item>95</item>
-        <item>153</item>
-        <item>175</item>
-        <item>201</item>
-        <item>248</item>
-        <item>275</item>
-        <item>301</item>
-        <item>356</item>
-        <item>372</item>
-        <item>394</item>
-        <item>400</item>
-        <item>422</item>
-        <item>432</item>
-        <item>442</item>
         <item>465</item>
+        <item>711</item>
     </integer-array>
 
     <!-- Minimum screen brightness allowed by the power manager. -->

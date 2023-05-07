@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<displayConfiguration>
+    <!-- Global Brightness-Nit mapping -->
+    <screenBrightnessMap>
+        <point>
+            <value>0.003421310</value>
+            <nits>2.0</nits>
+        </point>
+        <point>
+            <value>0.4998779</value>
+            <nits>465.0</nits>
+        </point>
+        <point>
+            <value>1.0</value>
+            <nits>711.0</nits>
+        </point>
+    </screenBrightnessMap>
+    <highBrightnessMode enabled="true">
+        <transitionPoint>0.4998779</transitionPoint> <!-- 2047/4095 -->
+        <minimumLux>6001</minimumLux>
+        <timing>
+            <timeWindowSecs>0</timeWindowSecs>
+            <timeMaxSecs>0</timeMaxSecs>
+            <timeMinSecs>0</timeMinSecs>
+        </timing>
+        <thermalStatusLimit>moderate</thermalStatusLimit>
+        <allowInLowPowerMode>false</allowInLowPowerMode>
+    </highBrightnessMode>
+</displayConfiguration>

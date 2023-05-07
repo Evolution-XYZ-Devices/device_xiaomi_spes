@@ -251,6 +251,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.dpm.feature=11
 
+# DisplayConfig
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/displayconfig/display_id_4630946773257169537.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946773257169537.xml \
+    $(LOCAL_PATH)/configs/displayconfig/display_id_4630946616659355009.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946616659355009.xml
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0.vendor \
