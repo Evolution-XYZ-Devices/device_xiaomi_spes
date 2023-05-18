@@ -126,6 +126,9 @@ dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
 dalvik.vm.dex2oat64.enabled=true
 
+# Display
+vendor.display.override_doze_mode=1
+
 # Display calib
 debug.sdm.support_writeback=0
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
