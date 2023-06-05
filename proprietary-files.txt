@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from V13.0.12.0.RGKMIXM_fd69c44717_11.0
+# All unpinned blobs below are extracted from SPESGlobal_V14.0.2.0.TGCMIXM_f4e2e7b209_13.0
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
