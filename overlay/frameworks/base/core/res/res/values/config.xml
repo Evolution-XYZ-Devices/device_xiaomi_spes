@@ -355,20 +355,53 @@
 
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
-        <item>0</item>
-        <item>10</item>
+        <item>1</item>
+        <item>25</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
-        <item>0</item>
+        <item>5</item>
         <item>10</item>
+        <item>17</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback when selecting an hour/minute tick of a Clock -->
+    <integer-array name="config_clockTickVibePattern">
+        <item>71</item>
+        <item>21</item>
     </integer-array>
 
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
-        <item>10</item>
+        <item>50</item>
+        <item>0</item>
     </integer-array>
+
+    <!-- Vibrator pattern to be used as the default for notifications
+         that specify DEFAULT_VIBRATE.
+     -->
+    <integer-array name="config_defaultNotificationVibePattern">
+        <item>0</item>
+        <item>400</item>
+        <item>400</item>
+        <item>400</item>
+    </integer-array>
+
+    <!-- Vibrator pattern to be used as the default for notifications
+         that do not specify vibration but vibrate anyway because the device
+         is in vibrate mode.
+     -->
+    <integer-array name="config_notificationFallbackVibePattern">
+        <item>0</item>
+        <item>100</item>
+        <item>200</item>
+        <item>50</item>
+    </integer-array>
+
+     <!-- The duration (in milliseconds) that should be applied to waveform vibrations that ends in
+         non-zero amplitudes, to bring the vibrator amplitude down to zero using this timing. -->
+    <integer name="config_vibrationWaveformRampDownDuration">50</integer>
 
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
