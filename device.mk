@@ -193,6 +193,12 @@ PRODUCT_PACKAGES += \
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    SettingsGoogle \
+    SystemUIGoogle
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
@@ -433,11 +439,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qti.dcvs.sh \
     init.goodix.events.sh
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Settings \
-    SystemUI \
-    NexusLauncherRelease
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
