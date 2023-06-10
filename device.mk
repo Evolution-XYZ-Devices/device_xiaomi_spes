@@ -256,7 +256,7 @@ PRODUCT_PACKAGES += \
 
 # GCam Go
 PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-V4
+    GCamGOPrebuilt-V3
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-qti
