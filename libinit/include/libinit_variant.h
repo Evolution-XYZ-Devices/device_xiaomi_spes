@@ -17,6 +17,7 @@ typedef struct variant_info {
     std::string brand;
     std::string device;
     std::string model;
+    std::string marketname;
     std::string build_fingerprint;
 
     bool nfc;

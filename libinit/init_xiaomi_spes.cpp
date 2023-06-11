@@ -17,6 +17,7 @@ static const variant_info_t spes_info = {
     .brand = "Redmi",
     .device = "spes",
     .model = "2201117TG",
+    .marketname = "Redmi Note 11",
     .build_fingerprint = "Redmi/spes/spes:13/TKQ1.221114.001/V14.0.2.0.TGCMIXM:user/release-keys",
 
     .nfc = false,
@@ -29,6 +30,7 @@ static const variant_info_t spes_in_info = {
     .brand = "Redmi",
     .device = "spes",
     .model = "2201117TI",
+    .marketname = "Redmi Note 11",
     .build_fingerprint = "Redmi/spes/spes:13/TKQ1.221114.001/V14.0.2.0.TGCMIXM:user/release-keys",
 
     .nfc = false,
@@ -41,6 +43,7 @@ static const variant_info_t spesn_info = {
     .brand = "Redmi",
     .device = "spesn",
     .model = "2201117TY",
+    .marketname = "Redmi Note 11 NFC",
     .build_fingerprint = "Redmi/spes/spes:13/TKQ1.221114.001/V14.0.2.0.TGKMIXM:user/release-keys",
 
     .nfc = true,
