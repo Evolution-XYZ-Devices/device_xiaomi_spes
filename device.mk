@@ -557,11 +557,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
-# Recorder
-PRODUCT_PACKAGES += \
-    RecorderPrebuilt \
-    PrebuiltGmail
-
 # PixelLauncherCustomOverlay
 PRODUCT_PACKAGES += \
     PixelLauncherCustomOverlaySpes
