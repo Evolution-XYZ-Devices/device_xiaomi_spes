@@ -149,18 +149,6 @@ int auto_hal_create_audio_patch(struct audio_hw_device *dev,
         }
         /* TODO - add sink type check and printout for non speaker sink */
         switch(sources->ext.device.type) {
-#ifdef FM_TUNER_EXT_ENABLED
-            case AUDIO_DEVICE_IN_FM_TUNER:
-                ALOGV("Creating audio patch for external FM tuner");
-                uc_info->id = USECASE_AUDIO_FM_TUNER_EXT;
-                uc_info->type = PCM_PASSTHROUGH;
-                list_init(&uc_info->device_list);
-                reassign_device_list(&uc_info->device_list, AUDIO_DEVICE_IN_FM_TUNER,
-                                     sources->ext.device.address);
-                uc_info->in_snd_device = SND_DEVICE_IN_CAPTURE_FM;
-                uc_info->out_snd_device = SND_DEVICE_OUT_BUS_MEDIA;
-                break;
-#endif
             default:
                 ALOGE("%s: Unsupported audio source type %x", __func__,
                             sources->ext.device.type);
