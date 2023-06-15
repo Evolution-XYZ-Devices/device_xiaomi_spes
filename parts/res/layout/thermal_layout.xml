@@ -11,8 +11,45 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<androidx.recyclerview.widget.RecyclerView
-     xmlns:android="http://schemas.android.com/apk/res/android"
-     android:id="@+id/thermal_rv_view"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content" />
+
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/thermal_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/thermal_summary"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/thermal_rv_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/thermal_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -86,7 +86,7 @@
                 android:resource="@drawable/ic_thermal_settings" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/thermal_summary" />
+                android:resource="@string/thermal_summary_short" />
             <meta-data
                 android:name="com.android.settings.order"
                 android:value="1" />

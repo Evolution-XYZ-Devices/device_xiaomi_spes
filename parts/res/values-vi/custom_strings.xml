@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Cấu hình nhiệt</string>
+    <string name="thermal_summary_short">Điều chỉnh cấu hình nhiệt để tối ưu hiệu năng</string>
+    <string name="thermal_summary">Điều chỉnh cấu hình nhiệt cho từng ứng dụng để tối ưu nhiệt và hiệu năng cho các tác vụ khác nhau\nCấu hình được cập nhật: Mặc định/Trò chơi</string>
+    <string name="thermal_default">Mặc định</string>
+    <string name="thermal_benchmark">Hiệu suất</string>
+    <string name="thermal_browser">Trình duyệt</string>
+    <string name="thermal_camera">Máy ảnh</string>
+    <string name="thermal_dialer">Trình quay số</string>
+    <string name="thermal_gaming">Trò chơi</string>
+    <string name="thermal_streaming">Phát trực tiếp</string>
+</resources>

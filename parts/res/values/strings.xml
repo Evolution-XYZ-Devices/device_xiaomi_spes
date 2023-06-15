@@ -16,8 +16,9 @@
 -->
 <resources>
     <!-- Thermal Profiles -->
-    <string name="thermal_title">Thermal Profiles</string>
-    <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance</string>
+    <string name="thermal_title">Thermal profiles</string>
+    <string name="thermal_summary_short">Adjust per-app thermal profiles for optimum performance</string>
+    <string name="thermal_summary">Adjust per-app thermal profiles for optimum temperature and performance\nUpdated thermal profile: Default/Gaming</string>
     <string name="thermal_default">Default</string>
     <string name="thermal_benchmark">Benchmark</string>
     <string name="thermal_browser">Browser</string>
