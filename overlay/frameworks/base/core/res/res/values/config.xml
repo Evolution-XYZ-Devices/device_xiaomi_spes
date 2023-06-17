@@ -70,27 +70,45 @@
           <item>21.55068128</item>    <!--  3 - 4 -->
           <item>24.0167788</item>     <!--  4 - 8 -->
           <item>30.62162162</item>    <!--  8 - 12 -->
-          <item>35.09486396</item>    <!--  12 - 20 -->
-          <item>41.2249643</item>     <!--  20 - 33 -->
-          <item>47.6760716</item>     <!--  33 - 55 -->
-          <item>55.73002427</item>    <!--  55 - 90 -->
-          <item>66.24126116</item>    <!--  90 - 148 -->
-          <item>79.67614115</item>    <!--  148 - 245 -->
-          <item>98.04727274</item>    <!--  245 - 403 -->
-          <item>125.1221991</item>    <!--  403 - 665 -->
-          <item>161.6875093</item>    <!--  665 - 1097 -->
-          <item>208.4885553</item>    <!--  1097 - 1808 -->
-          <item>264.8221315</item>    <!--  1808 - 2981 -->
-          <item>327.8974352</item>    <!--  2981 - 5000 -->
-          <item>401.1676739</item>    <!--  5000 - 10000 -->
-          <item>600.0</item>          <!--  10000+ -->
+          <item>45.09486396</item>    <!--  12 - 20 -->
+          <item>51.2249643</item>     <!--  20 - 33 -->
+          <item>67.6760716</item>     <!--  33 - 55 -->
+          <item>75.73002427</item>    <!--  55 - 90 -->
+          <item>86.24126116</item>    <!--  90 - 148 -->
+          <item>109.67614115</item>    <!--  148 - 245 -->
+          <item>130.04727274</item>    <!--  245 - 403 -->
+          <item>155.1221991</item>    <!--  403 - 665 -->
+          <item>203.7815373</item>    <!--  665 - 1097 -->
+          <item>257.9175834</item>    <!--  1097 - 1808 -->
+          <item>317.6371953</item>    <!--  1808 - 2981 -->
+          <item>451.8461759</item>    <!--  2981 - 5000 -->
+          <item>570.8257421</item>    <!--  5000 - 10000 -->
+          <item>711.0</item>          <!--  10000+ -->
       </array>
 
-    <!-- An array describing the screen's backlight values corresponding to the brightness
+     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
          This array should be equal in size to config_screenBrightnessBacklight. -->
     <integer-array name="config_screenBrightnessBacklight">
         <item>2</item>
+        <item>3</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>75</item>
+        <item>90</item>
+        <item>105</item>
+        <item>120</item>
+        <item>135</item>
+        <item>150</item>
+        <item>165</item>
+        <item>180</item>
+        <item>195</item>
+        <item>210</item>
+        <item>225</item>
+        <item>240</item>
         <item>255</item>
     </integer-array>
 
@@ -99,11 +117,30 @@
          should be measured with an all white image while the display is in the fully on state.
          Note that this value should *not* reflect the maximum brightness value for any high
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
+
          This array should be equal in size to config_screenBrightnessBacklight -->
-    <array name="config_screenBrightnessNits">
-        <item>4.0</item>
-        <item>500.0</item>
-    </array>
+    <integer-array name="config_screenBrightnessNits">
+        <item>2</item>
+        <item>4</item>
+        <item>22</item>
+        <item>30</item>
+        <item>68</item>
+        <item>95</item>
+        <item>153</item>
+        <item>175</item>
+        <item>201</item>
+        <item>248</item>
+        <item>275</item>
+        <item>301</item>
+        <item>356</item>
+        <item>372</item>
+        <item>394</item>
+        <item>400</item>
+        <item>422</item>
+        <item>432</item>
+        <item>442</item>
+        <item>465</item>
+    </integer-array>
 
     <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">6</integer>
@@ -626,9 +663,11 @@
              || display brightness <= disp1 && ambient brightness <= amb1 -->
     <integer-array translatable="false" name="config_brightnessThresholdsOfPeakRefreshRate">
           <item>11</item>
+          <item>15</item>
     </integer-array>
     <integer-array translatable="false" name="config_ambientThresholdsOfPeakRefreshRate">
           <item>-1</item>
+          <item>17</item>
     </integer-array>
 
     <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
