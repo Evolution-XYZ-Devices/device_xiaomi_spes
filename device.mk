@@ -551,7 +551,3 @@ PRODUCT_PACKAGES += \
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
-
-# PixelLauncherCustomOverlay
-PRODUCT_PACKAGES += \
-    PixelLauncherCustomOverlaySpes
