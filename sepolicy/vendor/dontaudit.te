@@ -19,3 +19,18 @@ dontaudit untrusted_app_all selinuxfs:file read;
 
 # all other no-context attempt by apps (as spotted on iQIYI)
 dontaudit untrusted_app_all sysfs_net:dir search;
+
+# why untrusted_app need these perms
+dontaudit untrusted_app_all {
+  sysfs_msm_subsys
+  rootfs
+}:dir {search read};
+dontaudit untrusted_app_all {
+  proc
+  proc_modules
+  proc_net
+  proc_net_tcp_udp
+  proc_tty_drivers
+  qemu_sf_lcd_density_prop
+  serialno_prop
+}:file read;
