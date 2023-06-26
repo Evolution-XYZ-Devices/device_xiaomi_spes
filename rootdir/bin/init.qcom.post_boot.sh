@@ -189,18 +189,9 @@ case "$soc_id" in
 
     # configure governor settings for little cluster
     echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-    echo 1305600 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
-    echo 614400 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-    echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/rtg_boost_freq
 
     # configure governor settings for big cluster
     echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-    echo 1401600 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
-    echo 1056000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
-    echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/rtg_boost_freq
-
-    echo "0:1017600" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
-    echo 80 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
 
     # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
     echo -6 >  /sys/devices/system/cpu/cpu0/sched_load_boost
@@ -211,8 +202,6 @@ case "$soc_id" in
     echo -6 >  /sys/devices/system/cpu/cpu5/sched_load_boost
     echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
     echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
-    echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
-    echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
 
     # Set Memory parameters
     configure_memory_parameters
