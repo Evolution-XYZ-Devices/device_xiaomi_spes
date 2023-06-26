@@ -29,9 +29,9 @@ static const lmk_info_t lmk_6144 = {
 // 4GB (mostly low ram) variant
 static const lmk_info_t lmk_4096 = {
     .psi_partial_stall_ms = "130",
-    .psi_complete_stall_ms = "700",
+    .psi_complete_stall_ms = "600",
     .thrashing_limit = "55",
-    .thrashing_limit_decay = "35",
+    .thrashing_limit_decay = "37",
     .swap_util_max = "90",
 };
 
