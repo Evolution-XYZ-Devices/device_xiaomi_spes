@@ -7,7 +7,7 @@
     Light Theme Baseline (Dynamic) Color: primary90 (system_accent1_100)
     Dark Theme Baseline (Dynamic) Color: primary30 (system_accent1_700) -->
    <solid
-       android:color="@android:color/system_neutral1_300"/>
+       android:color="@android:color/system_accent1_0"/>
        
    <size
        android:width="120dp"
