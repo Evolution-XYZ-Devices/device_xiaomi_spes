@@ -628,10 +628,6 @@
         <item>7</item> <!-- COLOR_MODE_SRGB -->
       </integer-array>
 
-     <!-- Delay that allows some content to arrive at the display before switching
-         from DOZE to ON, in millis. -->
-     <integer name="config_wakeUpDelayDoze">32</integer>
-
      <!-- The default value for transition animation scale found in developer settings.
          1.0 corresponds to 1x animator scale, 0 means that there will be no transition
          animations. Note that this is only a default and will be overridden by a
