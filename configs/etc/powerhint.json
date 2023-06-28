@@ -140,7 +140,7 @@
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
-        "40",
+        "50",
         "10"
       ],
       "ResetOnInit": true
@@ -302,14 +302,20 @@
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
-      "Duration": 1000,
+      "Duration": 500,
       "Value": "1190400"
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 500,
+      "Value": "1344000"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "TASchedtuneBoost",
-      "Duration": 1000,
-      "Value": "40"
+      "Duration": 500,
+      "Value": "50"
     },
     {
       "PowerHint": "INTERACTION",
@@ -338,7 +344,7 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "EnergyAware",
-      "Duration": 2000,
+      "Duration": 1500,
       "Value": "0"
     },
     {
@@ -368,43 +374,49 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
-      "Duration": 2000,
+      "Duration": 1000,
       "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
-      "Duration": 2000,
+      "Duration": 1000,
       "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
-      "Duration": 2000,
+      "Duration": 1000,
       "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "GPUMinFreq",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "CPUBWHystTriggerCount",
-      "Duration": 2000,
+      "Duration": 1000,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHystLength",
-      "Duration": 2000,
+      "Duration": 1000,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHistMemory",
-      "Duration": 2000,
+      "Duration": 1000,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWMinFreq",
-      "Duration": 2000,
+      "Duration": 1000,
       "Value": "11863"
     },
     {
@@ -440,37 +452,37 @@
     {
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "EnergyAware",
-      "Duration": 1000,
+      "Duration": 1500,
       "Value": "0"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CDSchedtuneBoost",
-      "Duration": 1000,
+      "Duration": 1500,
       "Value": "1"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
-      "Duration": 1000,
+      "Duration": 1500,
       "Value": "9999999"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPUBigClusterMinFreq",
-      "Duration": 1000,
+      "Duration": 1500,
       "Value": "9999999"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPULittleClusterMaxFreq",
-      "Duration": 1000,
+      "Duration": 1500,
       "Value": "9999999"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
       "Node": "CPULittleClusterMinFreq",
-      "Duration": 1000,
+      "Duration": 1500,
       "Value": "9999999"
     },
     {
