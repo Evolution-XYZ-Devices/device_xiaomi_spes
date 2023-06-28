@@ -41,6 +41,9 @@ on boot
     write /dev/cpuset/system-background/uclamp.boosted 0
     write /dev/cpuset/system-background/uclamp.latency_sensitive 0
 
+    # latency sensitive
+    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
+
 on property:sys.boot_completed=1
     # Read only one page at a time
     write /proc/sys/vm/page-cluster 0
@@ -65,12 +68,6 @@ on property:vendor.post_boot.parsed=1
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/restricted/cpus 0-3
 
-    # Configure CPU frequencies
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 691200
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq 1516800
-    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 806400
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq 1766400
-
     # Configure governor parameters
     # Little cluster
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load 90
@@ -93,14 +90,12 @@ on property:vendor.post_boot.parsed=1
     write /proc/sys/kernel/sched_upmigrate 95
 
     # Setup default schedtune values for foreground/top-app
-    write /dev/stune/schedtune.boost 0
-    write /dev/stune/schedtune.prefer_idle 0
+    write /dev/stune/schedtune.boost 7
+    write /dev/stune/schedtune.prefer_idle 1
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/top-app/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 1
-    
-    # Configure uclamp
-    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
+    write /dev/stune/top-app/schedtune.boost 25
+    write /dev/stune/foreground/schedtune.boost 11
 
 on property:persist.sys.device_provisioned=1
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,7
