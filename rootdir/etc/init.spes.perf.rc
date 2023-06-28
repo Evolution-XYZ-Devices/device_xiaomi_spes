@@ -60,8 +60,7 @@ on property:sys.boot_completed=1
     # Mount swap partitions specified in fstab
     swapon_all /vendor/etc/fstab.zram
 
-on property:vendor.post_boot.parsed=1
-    # Setup runtime cpusets
+    # Setup final cpusets
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-3,6-7
     write /dev/cpuset/background/cpus 0-1
