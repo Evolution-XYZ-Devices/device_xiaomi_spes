@@ -4,6 +4,7 @@ persist.camera.module.info              u:object_r:vendor_default_prop:s0
 cameradaemon.SaveMemAtBoot              u:object_r:vendor_default_prop:s0
 cpp.set.clock                           u:object_r:vendor_default_prop:s0
 disable.cpp.power.collapse              u:object_r:vendor_default_prop:s0
+vendor.vidhance.                        u:object_r:vendor_default_prop:s0
 vendor.camera.                          u:object_r:vendor_camera_prop:s0
 vidc.enc.dcvs.extra-buff-count          u:object_r:vendor_default_prop:s0
 camera.                                 u:object_r:vendor_camera_prop:s0
@@ -11,6 +12,7 @@ camerai.                                u:object_r:vendor_camera_prop:s0
 ro.camera.                              u:object_r:vendor_camera_prop:s0
 persist.camera.                         u:object_r:vendor_camera_prop:s0
 camera_screen_light_delay               u:object_r:vendor_camera_prop:s0
+sys.camera.miui.                        u:object_r:system_prop:s0
 
 # DFPS
 persist.vendor.dfps.level                       u:object_r:vendor_display_prop:s0
