@@ -37,6 +37,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     USCCDM \
     Videos \
     YouTube \
+    PixelLiveWallpaperPrebuilt \
     YouTubeMusicPrebuilt
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
