@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from SPESNIDGlobal_V14.0.1.0.TGKIDXM_30e114c3e6_13.0
+# All unpinned blobs below are extracted from SPESNEEAGlobal_V14.0.1.0.TGKEUXM_83be9365d1_13.0
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
