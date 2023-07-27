@@ -460,7 +460,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/qcom-caf/bootctrl
+    hardware/qcom-caf/bootctrl \
+    hardware/xiaomi
 
 # Storage
 PRODUCT_PROPERTY_OVERRIDES += \
