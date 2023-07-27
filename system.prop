@@ -2,6 +2,7 @@
 ro.bluetooth.emb_wp_mode=false
 ro.bluetooth.library_name=libbluetooth_qti.so
 ro.bluetooth.wipower=false
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aac
 persist.vendor.btstack.aac_frm_ctl.enabled=true
 persist.vendor.btstack.enable.twsplus=false
@@ -9,7 +10,9 @@ persist.vendor.btstack.connect.peer_earbud=true
 persist.vendor.btstack.enable.twsplussho=false
 persist.vendor.btstack.enable.swb=true
 persist.vendor.btstack.enable.swbpm=true
+persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.service.bdroid.soc.alwayson=true
+vendor.bluetooth.soc=cherokee
 
 # Camera
 camera.disable_zsl_mode=true
@@ -23,7 +26,8 @@ ro.charger.disable_init_blank=true
 debug.performance.tuning=1
 
 # CNE
-persist.vendor.cne.feature=1
+persist.vendor.cne.feature=1    
+persist.cne.feature=1
 
 # Dalvik
 pm.dexopt.install=speed-profile
