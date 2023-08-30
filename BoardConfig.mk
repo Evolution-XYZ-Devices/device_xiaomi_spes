@@ -104,7 +104,7 @@ USE_OPENGL_RENDERER := true
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # DTBO image
-BOARD_KERNEL_SEPARATED_DTBO := true
+# BOARD_KERNEL_SEPARATED_DTBO := true
 
 # EFI
 TARGET_USES_UEFI := true
@@ -152,7 +152,6 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 
 BOARD_KERNEL_CMDLINE += \
     androidboot.console=ttyMSM0 \
@@ -168,10 +167,9 @@ BOARD_KERNEL_CMDLINE += \
     swiotlb=2048 \
     kpti=off
 
-TARGET_FORCE_PREBUILT_KERNEL := true
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := vendor/bengal_defconfig
-TARGET_KERNEL_HEADERS := kernel/xiaomi/spes
+TARGET_KERNEL_CONFIG := vendor/spes-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/spes
 
 # Media
