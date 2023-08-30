@@ -117,3 +117,6 @@ debug.cpurend.vsync=false
 
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
+
+# Render ahead
+ro.hwui.render_ahead=10
