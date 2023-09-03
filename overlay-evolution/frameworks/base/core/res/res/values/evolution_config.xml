@@ -18,4 +18,7 @@
     <!-- Pocket Lock -->
     <bool name="config_pocketModeSupported">false</bool>
     <bool name="config_pocketUseLightSensor">false</bool>
+
+    <!-- Proximity check on screen on -->
+    <bool name="config_proximityCheckOnWake">false</bool>
 </resources>
