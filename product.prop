@@ -8,21 +8,5 @@ persist.vendor.radio.report_codec=1
 persist.vendor.radio.vdp_on_ims_cap=1
 persist.vendor.qti.telephony.vt_cam_interface=2
 
-# LMKD
-ro.lmk.low=1001
-ro.lmk.medium=800
-ro.lmk.critical=0
-ro.lmk.critical_upgrade=false
-ro.lmk.upgrade_pressure=100
-ro.lmk.downgrade_pressure=100
-ro.lmk.kill_heaviest_task=true
-ro.lmk.kill_timeout_ms=100
-ro.lmk.use_psi=true
-ro.lmk.psi_partial_stall_ms=90
-ro.lmk.psi_complete_stall_ms=700
-ro.lmk.thrashing_limit=70
-ro.lmk.thrashing_limit_decay=20
-ro.lmk.swap_util_max=100
-
 # SF
 debug.sf.latch_unsignaled=0

@@ -7,7 +7,6 @@
 #include <libinit_dalvik_heap.h>
 #include <libinit_variant.h>
 #include <libinit_utils.h>
-#include <libinit_lmk.h>
 
 #include "vendor_init.h"
 
@@ -59,12 +58,9 @@ static const std::vector<variant_info_t> variants = {
 void vendor_load_properties() {
     search_variant(variants);
     set_dalvik_heap();
-    set_lmk();
 
     // SafetyNet workaround
     property_override("ro.boot.verifiedbootstate", "green");
     property_override("ro.oem_unlock_supported", "0");
-
-    // LMKD Tunning
 
 }
