@@ -439,8 +439,7 @@ PRODUCT_PACKAGES += \
     init.mdm.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
-    init.qti.dcvs.sh \
-    init.goodix.events.sh
+    init.qti.dcvs.sh
 
 PRODUCT_PACKAGES += \
     fstab.qcom \

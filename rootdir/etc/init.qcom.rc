@@ -419,19 +419,8 @@ service vendor.qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     disabled
     oneshot
 
-service vendor.goodix-events /vendor/bin/init.goodix.events.sh
-    class late_start
-    user root
-    group root system input
-    disabled
-    oneshot
-
 on property:sys.boot_completed=1
     start vendor.qcom-post-boot
-
-    #Goodix event service
-    start vendor.goodix-events
-
 # Tweaks
     write /proc/sys/kernel/sched_autogroup_enabled 1
     write /proc/sys/kernel/sched_child_runs_first 1

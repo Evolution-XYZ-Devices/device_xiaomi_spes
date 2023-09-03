@@ -146,7 +146,6 @@
 /sys/devices(/platform)?/soc/[a-z0-9\.:]+,[a-z0-9\-\_]+/subsys[0-9]+/name         u:object_r:vendor_sysfs_ssr:s0
 
 # Shell
-/vendor/bin/init.goodix.events.sh                                       u:object_r:vendor_goodix_events_exec:s0
 /vendor/bin/init\.mi\.usb\.sh                                           u:object_r:vendor_qti_init_shell_exec:s0
 
 # Thermal
