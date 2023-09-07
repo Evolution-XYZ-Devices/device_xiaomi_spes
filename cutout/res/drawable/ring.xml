@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="oval">
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="oval">
 
-    <!-- Primary Container
-    Light Theme Baseline (Dynamic) Color: primary90 (system_accent1_100)
-    Dark Theme Baseline (Dynamic) Color: primary30 (system_accent1_700) -->
-   <solid
-       android:color="@android:color/system_accent1_0"/>
-       
-   <size
-       android:width="120dp"
-        android:height="120dp"/>
-</shape>
+        <solid
+            android:color="@android:color/black" />
+
+        <size
+            android:width="120dp"
+            android:height="120dp"/>
+
+        <stroke
+            android:width="7dp"
+            android:color="@android:color/system_accent1_700" />
+    </shape>
+</item>
+</layer-list>
