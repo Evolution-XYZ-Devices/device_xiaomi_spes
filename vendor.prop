@@ -216,6 +216,8 @@ vendor.display.use_smooth_motion=1
 vendor.gralloc.disable_ubwc=0
 vendor.gralloc.secure_preview_buffer_format=420_sp
 vendor.display.skip_refresh_rate_change=1
+ro.sf.force_hwc_brightness=1
+
 # Media Codecs
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
