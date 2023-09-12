@@ -155,7 +155,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 ro.apk_verity.mode=2
 
 # Graphics/Display
-debug.egl.hw=0
+debug.egl.hw=1
 debug.mdpcomp.logs=0
 ro.surface_flinger.use_smart_90_for_video=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
