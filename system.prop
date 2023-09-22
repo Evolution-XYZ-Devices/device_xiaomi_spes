@@ -110,7 +110,7 @@ ro.nfc.port=I2C
 
 # SkiaGL Threaded
 debug.renderengine.backend=skiaglthreaded
-debug.hwui.renderer=skiagl
+debug.hwui.renderer=opengl
 renderthread.skia.reduceopstasksplitting=true
 
 # Disable vsync for cpu rendered apps
