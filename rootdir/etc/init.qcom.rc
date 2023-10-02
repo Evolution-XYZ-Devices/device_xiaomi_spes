@@ -70,13 +70,6 @@ on init
     # Allow access panel0 backlight
     chown system system /sys/class/backlight/panel0-backlight/brightness
 
-on late-init
-    # Start services for bootanim
-    start surfaceflinger
-    start bootanim
-    start vendor.configstore-hal
-    start vendor.qti.hardware.display.allocator
-
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
