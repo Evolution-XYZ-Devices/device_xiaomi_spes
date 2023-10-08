@@ -164,16 +164,18 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
-    Snap \
     libpiex_shim
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt-V3
+
 # Camera ring
 PRODUCT_PACKAGES += \
-    CutoutRingServiceSpes
+    CutoutIndicator
 
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
@@ -274,10 +276,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
-
-# GCam Go
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-V3
     
 # GNSS
 PRODUCT_PACKAGES += \
@@ -479,8 +477,6 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
-    init.spes.rc \
-    init.spes.perf.rc \
     init.stnfc.rc \
     init.target.rc \
     init.xiaomi.rc \
@@ -541,11 +537,7 @@ PRODUCT_PACKAGES += \
     vndservicemanager
 
 # Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
 # VNDK
 PRODUCT_PACKAGES += \
@@ -580,9 +572,6 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
-#PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
@@ -590,5 +579,3 @@ PRODUCT_PACKAGES += \
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
-
-

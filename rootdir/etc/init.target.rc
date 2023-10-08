@@ -28,8 +28,6 @@
 #
 #
 
-import /vendor/etc/init/init.spes.rc
-import /vendor/etc/init/init.spes.perf.rc
 import /vendor/etc/init/hw/init.stnfc.rc
 import /vendor/etc/init/hw/init.xiaomi.rc
 
@@ -109,6 +107,7 @@ on charger
     start vendor.power_off_alarm
     setprop vendor.usb.controller 4e00000.dwc3
     setprop sys.usb.configfs 1
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 1
 
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper

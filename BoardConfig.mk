@@ -5,7 +5,6 @@
 #
 
 BOARD_VENDOR := xiaomi
-
 DEVICE_PATH := device/xiaomi/spes
 
 # A/B
@@ -22,9 +21,6 @@ AB_OTA_PARTITIONS += \
     vbmeta_system \
     vendor \
     vendor_boot
-
-# APEX
-DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -54,7 +50,6 @@ USE_CUSTOM_AUDIO_POLICY :=1
 
 # AVB
 BOARD_AVB_ENABLE := true
-
 BOARD_AVB_VBMETA_SYSTEM := system system_ext product
 BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
@@ -68,7 +63,7 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 BOARD_HAVE_BLUETOOTH := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := bengal
+TARGET_BOOTLOADER_BOARD_NAME := spes
 TARGET_NO_BOOTLOADER := true
 
 # Build Hacks
@@ -105,6 +100,7 @@ TARGET_ENABLE_MEDIADRM_64 := true
 
 # DTBO image
 BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 # EFI
 TARGET_USES_UEFI := true
@@ -141,13 +137,6 @@ BOARD_TAGS_OFFSET        := 0x00000100
 
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
-TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_KERNEL_HEADERS := kernel/xiaomi/spes                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 BOARD_KERNEL_CMDLINE += \
     androidboot.console=ttyMSM0 \
@@ -165,7 +154,11 @@ BOARD_KERNEL_CMDLINE += \
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := vendor/spes-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/spes
-
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := r450784e
+TARGET_KERNEL_ADDITIONAL_FLAGS := AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip LD=ld.lld
+TARGET_KERNEL_ADDITIONAL_FLAGS += \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Media
 TARGET_DISABLED_UBWC := true

@@ -1,8 +1,0 @@
-[
- {
-    "repository" : "etylix/kernel_xiaomi_spes-header",
-    "target_path": "kernel/xiaomi/spes",
-    "branch"     : "12",
-    "remote"     : "github"
- }
-]

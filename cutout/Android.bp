@@ -1,5 +1,5 @@
 android_app {
-    name: "CutoutRingServiceSpes",
+    name: "CutoutIndicator",
 
     srcs: ["src/**/*.java"],
 

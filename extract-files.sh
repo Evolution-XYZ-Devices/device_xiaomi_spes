@@ -59,8 +59,8 @@ function blob_fixup() {
             ;;
         
         vendor/lib64/camera/components/com.qti.node.mialgocontrol.so)
-        "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
-        ;;
+            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
+            ;;
 
         # Use VNDK 32 libhidlbase
         vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
