@@ -30,6 +30,11 @@
 #
 # Make modem config folder and copy firmware config to that folder for RIL
 #
+
+if [ ! -d /sys/kernelchk ]; then
+    setprop sys.powerctl reboot,bootloader
+fi
+
 if [ -f /data/vendor/modem_config/ver_info.txt ]; then
     prev_version_info=`cat /data/vendor/modem_config/ver_info.txt`
 else
