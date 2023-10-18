@@ -95,6 +95,9 @@ on boot
     # Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
 
+    # Start mi_thermald
+    start mi_thermald
+
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
@@ -108,6 +111,8 @@ on charger
     setprop vendor.usb.controller 4e00000.dwc3
     setprop sys.usb.configfs 1
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 1
+    # Start mi_thermald
+    start mi_thermald
 
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
