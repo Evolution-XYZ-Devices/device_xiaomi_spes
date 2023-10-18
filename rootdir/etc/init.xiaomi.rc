@@ -59,6 +59,7 @@ service mi_thermald /system/vendor/bin/mi_thermald
     class core
     user root
     group system
+    seclabel u:r:mi_thermald:s0
 
 service vendor.displayfeature /vendor/bin/displayfeature
     class late_start
