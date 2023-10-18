@@ -60,7 +60,7 @@ on early-fs
     start vold
 
     # Xiaomi Thermal Profiles permissions
-    chown system system /sys/class/thermal/thermal_message/sconfig
+    chown system system /sys/devices/virtual/thermal/thermal_message/sconfig
 
 on fs
     start hwservicemanager
