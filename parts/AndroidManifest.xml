@@ -41,7 +41,8 @@
         <activity
             android:name=".TileEntryActivity"
             android:label="@string/device_settings_app_name"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:theme="@style/Theme.SubSettingsBase"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
             </intent-filter>
@@ -62,13 +63,15 @@
 
         <service
             android:name=".thermal.ThermalService"
-            android:permission="ThermalService">
+            android:permission="ThermalService"
+            android:exported="true">
         </service>
 
         <activity
             android:name=".display.DcDimmingSettingsActivity"
             android:label="@string/dc_dimming_enable_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:theme="@style/Theme.SubSettingsBase"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -85,6 +88,7 @@
             android:name=".display.DcDimmingTileService"
             android:icon="@drawable/ic_dc_tile"
             android:label="@string/dc_dimming_enable_title"
+            android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action
