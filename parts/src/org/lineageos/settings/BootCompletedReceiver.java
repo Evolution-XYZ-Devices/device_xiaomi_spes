@@ -24,10 +24,10 @@ import android.content.IntentFilter;
 import android.util.Log;
 
 import org.lineageos.settings.dirac.DiracUtils;
+import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
-
     private static final boolean DEBUG = false;
     private static final String TAG = "XiaomiParts";
 
@@ -38,11 +38,11 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         }
         if (DEBUG)
             Log.d(TAG, "Received boot completed intent");
-            ThermalUtils.startService(context);
         try {
             DiracUtils.getInstance(context);
         } catch (Exception e) {
             Log.d(TAG, "Dirac is not present in system");
         }
+        ThermalUtils.initialize(context);
     }
 }
