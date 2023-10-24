@@ -168,10 +168,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GCamGOPrebuilt-V3
 
-# Camera ring
-PRODUCT_PACKAGES += \
-    CutoutIndicator
-
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
