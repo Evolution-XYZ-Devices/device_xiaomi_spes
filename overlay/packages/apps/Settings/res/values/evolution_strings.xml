@@ -7,4 +7,7 @@
     <!-- ROM maintainer name -->
     <string name="build_maintainer_summary">Hoang Pham Anh Duy (etylix)</string>
     <string name="build_maintainer_donate_url">https://ko-fi.com/etylix</string>
+
+    <!-- Build status -->
+    <string name="build_status_summary">Final</string>
 </resources>
